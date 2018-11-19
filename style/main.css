@@ -1,0 +1,58 @@
+.main {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  background: #fafafa;
+  margin: 60px 0 100px 380px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
+}
+
+.wrap {
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  overflow: hidden;
+}
+
+.wrap:before {
+  content: "";
+  display: block;
+  border-radius: 8px 8px 0px 0px;
+  width: 40px;
+  height: 8px;
+  position: absolute;
+  left: 100px;
+  background: #212121;
+}
+
+.wrap:after {
+  content: "";
+  display: block;
+  border-radius: 0px 8px 8px 0px;
+  width: 8px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  background: #212121;
+}
+
+.ribbon6 {
+  color: #fafafa;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  z-index: 2;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  border: 1px dashed;
+  box-shadow: 0 0 0 3px #607D8B, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+  background: #607D8B;
+}
