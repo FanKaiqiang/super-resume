@@ -5,5 +5,7 @@ a{
 }
 
 body{
+  display: flex;
+  flex-direction: column;
   background: #EAEAEA;
 }

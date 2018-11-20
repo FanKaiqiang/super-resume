@@ -1,41 +1,94 @@
+@media(min-width:800px) {
+  .aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background: linear-gradient(180deg, #607D8B 0, #212121 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aside>img {
+    margin-top: 80px;
+  }
+  .aside>.name {
+    margin-top: 40px;
+  }
+  .aside>.motto {
+    margin: 30px 0;
+  }
+  svg {
+    font-size: 36px;
+    margin: 0 10px;
+  }
+  .aside>.icons {
+    font-size: 36px;
+    user-select: none;
+  }
+  .aside>.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aside>.link>.inside {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
 
-.aside {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100vh;
-  background: linear-gradient(180deg, #607D8B 0, #212121 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media(max-width:800px) {
+  .aside {
+    height: 332px;
+    background: linear-gradient(180deg, #607D8B 0, #212121 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .aside>img, .aside>.name {
+    margin-top: 10px;
+  }
+  .aside>.motto {
+    margin: 15px 0;
+  }
+  svg {
+    font-size: 28px;
+    margin: 0 10px;
+  }
+  .aside>.icons {
+    font-size: 28px;
+    user-select: none;
+  }
+  .aside>.link {
+    position: absolute;
+    top: 280px;
+    left: 0.7rem;
+    font-size: 14px;
+    display: flex;
+  }
+  .aside>.link>.inside {
+    width: 1.6rem;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #607D8B;
+  }
 }
 
 .aside>img {
-  margin-top: 80px;
   border: 5px solid white;
   border-radius: 50%;
   width: 120px;
 }
 
-.aside>.name{
-  margin-top: 40px;
-  font-family: Roboto,serif;
+.aside>.name {
+  font-family: Roboto, serif;
   font-size: 30px;
-  color:#fafafa;
+  color: #fafafa;
 }
-.aside>.motto{
+
+.aside>.motto {
   font-size: 14px;
-  color:#fafafa;
-  margin: 30px 0;
-}
-.message,.skill,.project,.blog,.contact{
-  margin-bottom: 20px;
-}
-.aside>.icons>a{
-  font-size: 36px;
-  margin: 0 10px;
-}
-.aside>.icons{
-  user-select: none;
+  color: #fafafa;
 }
